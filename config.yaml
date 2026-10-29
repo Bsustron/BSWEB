@@ -1,4 +1,4 @@
-baseurl: https://example.com/
+baseurl: https://bsstats1.netlify.app/
 locale: en_US
 title: Felmdrav - A Hugo Theme
 theme: hugo-felmdrav
@@ -74,11 +74,11 @@ params:
       font_color: ''
       link_color: ''
     header:
-      alt_text: alt text for header image
+      alt_text: Cows, sheep, goats and a horse grazing on a green farm pasture
       backdrop:
-        color: '#257a30ff'
-        enabled: false
-        opacity: 0.25
+        color: '#ffffffff'
+        enabled: true
+        opacity: 0.7
         padding: 0.75rem 1rem
         radius: 0.5rem
       colors:
@@ -86,7 +86,7 @@ params:
         subtitle: '#435465ff'
         title: '#222222ff'
       enabled: true
-      image: img/header_bg_example.png
+      image: img/header_livestock.jpg
       overlay_alignment: lb
       overlay_padding: 1rem
       show_text: true

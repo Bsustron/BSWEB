@@ -1,0 +1,147 @@
+baseurl: https://example.com/
+locale: en_US
+title: Felmdrav - A Hugo Theme
+theme: hugo-felmdrav
+DefaultContentLanguage: en
+pagination:
+  pagerSize: 2
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+security:
+  allowContent:
+    - text/html
+    - text/markdown
+params:
+  analytics:
+    matomo:
+      enabled: false
+      site_id: 0
+      url: https://analytics.example.com
+  append_site_title: true
+  date_format: January 2, 2006
+  fonts:
+    body: ''
+    body_googlefont: false
+    body_size: ''
+    body_variant: ''
+    header_subtitle: ''
+    header_subtitle_googlefont: false
+    header_title: ''
+    header_title_googlefont: false
+    headline: Open Sans
+    headline_base_size: ''
+    headline_googlefont: false
+    headline_variant: ''
+  grid:
+    left: 3
+    main: 6
+    right: 3
+  hide_meta: false
+  images:
+    extended_rendering: false
+  mainSections: posts
+  meta:
+    DC.Copyright: Karl Mustermann
+    description: This is only an example value for the meta description
+    keywords: example, site, theme, felmdrav
+  navbar:
+    adjust_header: 20
+    background_color: ''
+    bg_scheme: bg-primary
+    color_scheme: navbar-dark
+    style: header
+    text_alignment: ''
+  post:
+    image_title_as_caption: false
+  show_date: true
+  show_number_of_words: false
+  sidebar:
+    left: ''
+    right: ''
+  subtitle: Example of Subtitle
+  theme:
+    background_color: ''
+    background_image: ''
+    background_image_repeat: ''
+    bootstrap_theme: ''
+    footer:
+      background_class: ''
+      background_color: ''
+      enabled: true
+      font_color: ''
+      link_color: ''
+    header:
+      alt_text: alt text for header image
+      backdrop:
+        color: '#257a30ff'
+        enabled: false
+        opacity: 0.25
+        padding: 0.75rem 1rem
+        radius: 0.5rem
+      colors:
+        background_color: ''
+        subtitle: '#435465ff'
+        title: '#222222ff'
+      enabled: true
+      image: img/header_bg_example.png
+      overlay_alignment: lb
+      overlay_padding: 1rem
+      show_text: true
+      text_on_image: true
+      text_shadow:
+        color: '#487245ff'
+        enabled: false
+        opacity: 0.75
+      type:
+        subtitle_max: 1.55rem
+        subtitle_min: 0.9rem
+        text_max_width: 68ch
+        title_max: 3.0rem
+        title_min: 1.15rem
+        title_nowrap: true
+    subfooter:
+      background_class: ''
+      background_color: ''
+      enabled: true
+      font_color: ''
+      link_color: ''
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
+    - identifier: posts
+      name: Blog
+      url: /posts/
+      weight: 20
+    - identifier: components
+      name: Components
+      pageRef: /components
+      url: /components/
+      weight: 30
+    - identifier: layout
+      name: Layout
+      url: '#'
+      weight: 40
+    - name: Sidebar left (3/9)
+      parent: layout
+      url: /layout/sidebar-left/
+      weight: 10
+    - name: Sidebar right (4/8)
+      parent: layout
+      url: /layout/sidebar-right/
+      weight: 20
+    - name: Both sidebars (3/6/3)
+      parent: layout
+      url: /layout/sidebar-both/
+      weight: 30
+    - name: About
+      url: /about/
+      weight: 50
+taxonomies:
+  category: categories
+  series: series
+  tag: tags
